@@ -1,0 +1,31 @@
+.main-container {
+  background-color: #eee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  .button {
+    padding: .5rem 1rem;
+    border-radius: .375rem;
+    box-shadow: .125rem .125rem .25rem .0625rem #0000005e;
+    font-weight: 500;
+    color: white;
+    font-size: 1.125rem;
+    transition: all .2s ease-in-out;
+
+    &:first-child {
+      background: linear-gradient(135deg, rgb(155, 62, 0) 0%, rgb(0, 79, 250) 100%);
+    }
+
+    &:last-child {
+      background: linear-gradient(135deg, rgb(0, 255, 200) 0%, rgb(0, 79, 250) 100%);
+      color: black;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
